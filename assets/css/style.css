@@ -20,13 +20,14 @@ html, body {
 	height: 50%;
 }
 .slider__photo-container {
+	transition: background 2s;
 	background: url(../img/1.jpg);
 	background-repeat: no-repeat;
 	padding: 1.5rem;
 	height: 85%;
-	color: white;
+	color: rgb(255, 255, 255);
 }
-.slider__footer {
+.slider__pagination {
 	text-align: center;
 	line-height: 4.35rem;
 }
@@ -52,16 +53,18 @@ html, body {
 	text-align: center;
 	font-size: 1.5rem;
 }
-.slider__footer span {
+.slider__pagination span {
 	display: inline-block;
 	margin-top: 2rem;
 	margin-right: .5rem;
 	border-radius: 50%;
-	background-color: rgba(0, 0, 0, .3);
 	cursor: pointer;
 	width: 1.3rem;
 	height: 1.3rem;
 }
-.slider__footer span:first-child {
+.active {
 	background-color: rgba(0, 0, 0, .7);
+}
+.passive {
+	background-color: rgba(0, 0, 0, .3);
 }
